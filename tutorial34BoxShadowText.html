@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sshadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid blue; */
+            background-color: violet;
+            /* box-shadow: 7px 5px 2px aqua; */
+            /* box-shadow: -7px -5px 2px aqua; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color */
+            /* box-shadow: -7px -5px 2px rgba(71, 172, 72, 0.5); in rgba, a is for alpha, used for density of colour */
+            box-shadow: inset 3px 5px aqua;
+            /* inset is used to shift the shadow over the element */
+            box-shadow: 3px 5px aqua, 4px 6px red;
+            /* for using double colour inshadow a comma is used */
+        }
+        .card h1{
+            text-shadow: 3px 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is C++ Course</h1>
+            <p>I have started C++ which does not mean Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, aspernatur?</p>
+
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>I have started C++ which does not mean Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, aspernatur?</p>
+
+        </div>
+        <div class="card" id="card-3">
+            <h3>Card3</h3>
+        </div>
+    </div>
+</body>
+</html>
