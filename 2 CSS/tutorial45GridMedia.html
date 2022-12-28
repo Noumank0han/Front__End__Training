@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Media</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside '
+            'footer footer footer footer ';
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        .bdr{
+            background-color: wheat;
+            border: 2px solid blue;
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: aqua;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'section section section section '
+                'aside aside aside aside '
+                'footer footer footer footer ';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                text-align: center;
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body{
+                background-color: rebeccapurple;
+            }
+            span{
+                text-align: center;
+                display: block;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'section section section section '
+                'aside aside aside aside '
+                'footer footer footer footer ';
+            }
+            span{
+                text-align: center;
+                display: block;
+            }
+        }
+        
+
+        @media (min-width:800px) {
+            body{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Map</span>
+        </nav>
+        <section class="bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sed illum laudantium eligendi rem inventore unde nesciunt nam suscipit consectetur cumque fugiat, debitis fuga dignissimos aliquam. Commodi quaerat tempora esse suscipit enim tenetur similique dolore! Animi eius vitae recusandae officiis explicabo itaque, eveniet atque iure nostrum neque harum veritatis tempore quae nobis totam earum id dignissimos, voluptatem ea omnis iste consectetur! Autem excepturi ut quia ullam. Rerum, quo itaque dolores non aliquid deleniti unde error incidunt. Sit porro quisquam minus quibusdam in nostrum distinctio recusandae laborum quia dolor iure dolores ipsam ab enim voluptatum ratione, minima ipsum velit. Velit adipisci dicta enim minima impedit, explicabo, dignissimos facilis consequuntur omnis, voluptatum ipsam culpa architecto possimus molestiae! Eveniet nulla nisi minima laboriosam iusto accusantium veritatis quibusdam accusamus molestias aliquam, labore dicta maiores est temporibus! Placeat laborum magnam libero doloribus praesentium illo voluptas vitae assumenda officia! Nesciunt, quasi laboriosam labore temporibus blanditiis voluptates nihil eveniet ab fugiat voluptate, consequuntur quaerat, nulla alias dicta! Totam id quo, est vitae vero voluptate. Voluptatibus expedita beatae unde minima impedit dolorem dolorum earum soluta provident inventore accusantium, maiores dicta similique tenetur pariatur eveniet voluptates, enim in culpa quae! Odio natus maxime dolorum dolores non magni, repellendus aliquam temporibus aliquid repudiandae accusantium iusto quisquam consequatur quam eveniet delectus tempora ipsam consectetur possimus doloribus nam! Magni consequuntur quae in, hic sapiente iure veniam necessitatibus inventore exercitationem distinctio, minima corrupti molestias sequi maxime! Maxime, nam excepturi! Ea suscipit dolor nam, minus, non similique laudantium assumenda consectetur, consequuntur excepturi laboriosam cum iusto ad molestias. Quam quidem ad doloremque nemo error veritatis consequuntur quos architecto, quas optio minima tempora eligendi odio nesciunt, qui, natus quibusdam! Reiciendis reprehenderit voluptates, accusamus cum consequatur ad, aliquam ut autem ratione qui, ipsum iste. Explicabo sapiente, sequi, soluta, doloribus inventore atque ullam libero itaque aspernatur ipsam nesciunt?
+        </section>
+        <aside class="bdr">
+            More About Us
+        </aside>
+        <footer class="bdr">
+            Copy Rights 2022
+        </footer>
+    </div>
+</body>
+</html>
