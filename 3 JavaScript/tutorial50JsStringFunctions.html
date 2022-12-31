@@ -14,8 +14,37 @@
     <script>
         var str = "This is a string";
         console.log(str);
-        var position = str.indexOf('is')
-        console.log(position)
+        var position = str.indexOf('is');
+        console.log(position);
+
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        var substr = str.slice(1,6); // Can also take negative values
+        var substr = str.substring(1,6); // only for positive values
+        var substr = str.substr(5,4); // (starting value, number of values after it)
+        console.log(substr);
+
+        var replaced = str.replace('string', 'Nouman');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLocaleLowerCase());
+
+        var newString = str.concat('Value');
+        console.log(newString);
+
+        var strWithWhitespaces = "   this contains      white spaces   ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+        
+        var char2 = str.charAt(2);
+        console.log(char2);
+        var char2 = str.charAt(2);
+
+        console.log(str[2]);
+        
     </script>
 </body>
 </html>

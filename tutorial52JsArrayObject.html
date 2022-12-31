@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in Java Script</title>
+</head>
+<body>
+    <div class="container">Simple HTML</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;  //boolian
+        let myVar4 = null;  //boolian
+        let myVar5 = undefined;  //boolian
+
+        let employee = {
+            name: "Nouman",
+            salary: 10,
+            channel: "CodeWithNouman",
+            channel2: "ProgrammingWithNouman",
+            "channel 2": "22ProgrammingWithNouman", // When there is a space in the key, write it in double commas
+        }
+        console.log(employee);
+        employee.channel2;
+        console.log(employee.channel2);
+        console.log(employee['channel 2']); // When there is a space in the key, write it in square brackets and single quotes
+
+        // let names = [1, 2, 4, "Nouman", undefined];
+        // let names = new Array(1, 2, 4, "Nouman", undefined);
+        let names = new Array(23, 45);
+        let names = new Array(23); // It means there are 23 empty elements in the array
+        console.log(names[0]);
+        console.log(names.length);
+        names = names.sort();
+        console.log(names);
+        names.push("This is pushed");
+        console.log(names);
+    </script>
+</body>
+</html>
