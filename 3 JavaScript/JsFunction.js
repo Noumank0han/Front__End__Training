@@ -4,9 +4,9 @@ function greet (name, greettext = "Greetings from JS"){ //default value of greet
 }
 
 function sum (a, b, c){
-    d = a + b + c;
+    let d = a + b + c;
     return d;
-    console.log("The function is returned co cannot perform any thing else")
+    console.log("The function is returned co cannot perform any thing else");
 }
 
 function NumCheck (a, b){
