@@ -26,7 +26,7 @@ module.exports = {
     extend: {
       spacing: {
         'big': '32rem',
-        'vbig': '50rem',
+        'vbig': '45rem',
       },
   
       screens:{
